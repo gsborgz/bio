@@ -27,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.profile}>
           <div className={styles.profilePic}>
-            <Image src="/img/gabriel-desenho.png" alt="Gabriel da Silva Borges desenho busto" width={150} height={150} />
+            {/* <Image src="/img/gabriel-desenho.png" alt="Gabriel da Silva Borges desenho busto" width={150} height={150} /> */}
             <Image src="/img/gabriel-real.jpg" alt="Gabriel da Silva Borges real busto" width={150} height={150} />
           </div>
 
