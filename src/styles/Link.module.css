@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffff;
+  font-size: 20px;
+  color: #000;
+  border-radius: 10px;
+  width: 200px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.upRightArrowIcon {
+  margin-right: -10px;
+}
+
+.container img {
+  padding-right: 10px;
+}
