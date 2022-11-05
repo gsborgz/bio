@@ -24,17 +24,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={styles.header}>
+      {/* <header className={styles.header}>
         Gabriel da Silva Borges
-      </header>
+      </header> */}
 
       <main className={styles.main}>
         { !socialMedias?.length ? <Skeleton /> : <Profile socialMedias={socialMedias} />}
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         Feito por Gabriel da Silva Borges
-      </footer>
+      </footer> */}
     </div>
   )
 }
