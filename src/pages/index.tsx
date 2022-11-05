@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Skeleton from 'react-loading-skeleton';
+import Profile from '../components/Profile';
+import styles from '../styles/Home.module.css';
 import { useEffect, useState } from 'react';
-import Social from '../components/Link';
 import api from '../services/api';
-import styles from '../styles/Home.module.css'
 import { SocialMedia } from './api/social';
 
 export default function Home() {
@@ -24,24 +24,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header className={styles.header}>
+        Gabriel da Silva Borges
+      </header>
+
       <main className={styles.main}>
-        <section className={styles.profile}>
-          <div className={styles.profilePic}>
-            {/* <Image src="/img/gabriel-desenho.png" alt="Gabriel da Silva Borges desenho busto" width={150} height={150} /> */}
-            <Image src="/img/gabriel-real.jpg" alt="Gabriel da Silva Borges real busto" width={150} height={150} />
-          </div>
-
-          <span className={styles.profileDesc}>Eae! Eu me chamo Gabriel, mas meu nome por aí é Borgez.</span>
-        </section>
-
-        <section className={styles.socialMedias}>
-          {socialMedias?.map(socialMedia => (<Social key={socialMedia.name} config={socialMedia} />))}
-        </section>
+        { !socialMedias?.length ? <Skeleton /> : <Profile socialMedias={socialMedias} />}
       </main>
 
-      {/* <footer className={styles.footer}>
-        footer
-      </footer> */}
+      <footer className={styles.footer}>
+        Feito por Gabriel da Silva Borges
+      </footer>
     </div>
   )
 }

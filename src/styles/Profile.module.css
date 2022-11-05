@@ -1,0 +1,23 @@
+.socialMedias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -10px 0 0 0;
+}
+
+.socialMedias > * {
+  margin-top: 10px;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.profilePic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}

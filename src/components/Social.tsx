@@ -3,7 +3,11 @@ import Link from 'next/link';
 import { SocialMedia } from '../pages/api/social'
 import styles from '../styles/Link.module.css'
 
-export default function Social(props: any) {
+type Props = {
+  config: SocialMedia;
+}
+
+export default function Social(props: Props) {
   const { config } = props;
   const { name, description, icon, url } = config;
   

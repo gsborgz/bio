@@ -7,6 +7,12 @@ body {
   font-family: 'Chelsea Market', cursive;
 }
 
+header{ min-height:50px }
+footer{ min-height:50px }
+
+body{ display:flex; flex-direction:column; }
+main{ flex:1; }
+
 a {
   color: inherit;
   text-decoration: none;
