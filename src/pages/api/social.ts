@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-export type SocialMedia = {
+export type SocialMediaProps = {
   name: string,
   description: string,
   icon: string,
@@ -10,7 +10,7 @@ export type SocialMedia = {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<SocialMedia[]>
+  res: NextApiResponse<SocialMediaProps[]>
 ) {
   if (req.method === 'GET') {
     res.status(200).json([

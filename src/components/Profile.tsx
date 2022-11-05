@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Social from '../components/Social';
-import { SocialMedia } from '../pages/api/social';
+import Social from './SocialMedia';
+import { SocialMediaProps } from '../pages/api/social';
 import styles from '../styles/Profile.module.css';
 
 type Props = {
-  socialMedias: SocialMedia[]
+  socialMedias: SocialMediaProps[]
 }
 
 export default function Profile({ socialMedias }: Props) {

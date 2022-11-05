@@ -1,21 +1,7 @@
 import Head from 'next/head';
-import Skeleton from 'react-loading-skeleton';
-import Profile from '../components/Profile';
 import styles from '../styles/Home.module.css';
-import { useEffect, useState } from 'react';
-import api from '../services/api';
-import { SocialMedia } from './api/social';
 
 export default function Home() {
-  const [socialMedias, setSocialMedias] = useState<SocialMedia[]>();
-  
-  useEffect(() => {
-    api.get('/social')
-      .then(response => {
-        setSocialMedias(response.data);
-      })
-  }, []);
-
   return (
     <div className={styles.container}>
       <Head>
@@ -29,7 +15,7 @@ export default function Home() {
       </header> */}
 
       <main className={styles.main}>
-        { !socialMedias?.length ? <Skeleton /> : <Profile socialMedias={socialMedias} />}
+        OPA!
       </main>
 
       {/* <footer className={styles.footer}>
