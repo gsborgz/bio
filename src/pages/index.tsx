@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>BORGEZ</title>
         <meta name="description" content="Mídias sociais de Gabriel da Silva Borges" />
-        <link rel="icon" href="/icon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* <header className={styles.header}>
